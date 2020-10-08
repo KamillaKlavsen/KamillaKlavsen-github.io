@@ -1,0 +1,469 @@
+:root {
+    --light-bg: #F7F9FF;
+    --white: #FFFFFF;
+    --blue: #57C7F2;
+    --beige: #D9CFC7;
+    --dark-section: #2E2E2E;
+    --dark-blue: #0A2463;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    /*SKAL SES MED IPHONE X*/
+    /* fælles for alle sider*/
+
+    /*Overskrifter*/
+    h1 {
+        font-size: 40px;
+        padding: 4vh; 
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 25px;
+        margin: 14px 0;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    h4 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    /*links*/
+    .button {
+        margin-bottom: 20px;
+    }
+
+    /*NAVIGATION*/
+    nav {
+        height: 72px;
+    }
+
+    .nav-forside {
+        background-color: var(--dark-section);
+        position: static;
+    }
+
+    nav>a>img {
+        padding: 0px 39%;
+    }
+    nav>ul {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: var(--dark-section);
+        display: none;
+    }
+
+    nav>ul>li {
+        display: block;
+        padding: 20px 0;
+    }
+    nav>ul>li>a {
+        padding: 22px 20px;
+    }
+    nav>ul>li>ul {
+        display: none;
+        position: static;
+        background-color: rgb(68, 68, 68);
+        margin: 23px 0 0;
+        width: 100%;
+    }
+
+    nav>ul>li:active>ul {
+        display: block;
+    }
+    
+    nav>ul>li>ul>li>a {
+        padding: 15px 15px;
+    }
+
+    .burgerbar {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 12px 20px;
+    }
+
+    .burgerbar i {
+        font-size: 40px;
+        color: var(--white);
+    }
+
+    a:active {
+        background-color: var(--dark-section);
+    }
+
+    /*FOOTER*/
+
+    .logos {grid-area: logos;}
+    .kontakt {grid-area: kontakt;}
+    .åbningstider {grid-area: åben;}
+    footer:last-child {grid-area: social;}
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'åben'
+        'kontakt'
+        'social'
+        'logos';
+        height: fit-content;
+        line-height: 1.2;
+    }
+
+    .footer-div {
+        margin: 6vw 0;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-div:last-child {
+        margin: auto;
+    }
+
+    .logos{
+        display: block;
+    }
+    .logos > img{
+        margin-bottom: 2vw;
+    }
+
+
+
+    /*hero*/
+    .hero{
+        height: 146px;
+    }
+
+    /*doors*/
+    .doors {
+        margin: 20px 6vw 0;
+    }
+    
+
+    /*------------------FORSIDE------------------*/
+    .fa-arrow-down {
+        display: none;
+    }
+
+
+    /*-------sektion livskvalitet-------*/
+    .img-text {
+        display: block;
+        height: fit-content;
+        margin: 30px 0;
+    }
+
+    .img {
+        width: 100%;
+        z-index: initial;
+    }
+    .img-right{
+        transform: translateX(0%);
+    }
+    .right-box, .left-box {
+        height: 103px;
+        width: 100%;
+        position: relative;
+        padding: 20px 12vw;
+    }
+    .center{
+        display: block;
+
+    }
+
+    .p-hide{
+        display: none;
+    }
+
+    /*-------sektion tre bokse-----*/
+    .three-boxes{
+        height: 231px;
+        padding: 0;
+    }
+
+    .black-box{
+        height: 160px;
+        width: 32%;
+        padding: 19% 2px;
+        font-size: 15px;
+    }
+    .two-lines {
+        padding-top: 16%;
+    }
+
+    /*------------------GIRL'S BOOTCAMP------------------*/
+    .girls-boot {
+        background-image: url(../images/hero/hero-billede7-kopi.png);
+    }
+    /*------------------HANDELSBETINGELSER------------------*/
+    .grid-handel {
+        display: block;
+        box-shadow: none;
+        margin: 30px 0;
+    }
+
+    .handel-grid:nth-child(odd) {
+        padding: 20px 12vw;
+        background-color: var(--beige);
+    }
+    
+    .handel-grid:nth-child(even) {
+        padding: 20px 12vw;
+        background-color: var(--white);
+    }
+
+    /*------------------HOLDBESKRIVELSER - KOPI2------------------*/
+    .hold-flex {
+        display: block;
+    }
+
+    .hold-box {
+        width: 100%;
+    }
+
+    .hold-box:nth-child(3n+3) {
+        transform: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 80%;
+        margin: 30% 7%;
+    }
+
+    .holdbeskriv {
+        background-image: url(../images/hero/hero-billede3-kopi.png);
+    }
+
+    /*------------------HOLDPLAN------------------*/
+    /*------------------INTROFORLØB------------------*/
+    .nye-medlemmer {
+        background-image: url(../images/hero/hero-billede1-kopi.png);
+    }
+    /*------------------KOSTVEJLEDNING------------------*/
+    .kost-btn{
+        transform: translateY(0);
+    }
+    .kost-tekst{
+        transform: translateY(0);
+    }
+    /*------------------MEDLEMSBETINGELSER------------------*/
+    /*------------------NYE MEDLEMMER------------------*/
+    .nye-medlemmer {
+        background-image: url(../images/hero/hero-billede1-kopi.png);
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .grid-personlig {
+        display: block;
+        margin: 30px 0;
+        box-shadow: none;
+    }
+
+    #stepFigure {
+        display: none;
+    }
+
+    .info-mobil {
+        display: block;
+        width: 100%;
+    }
+    
+    .dark-section {
+        width: 100%;
+        background-color: var(--dark-section);
+        padding: 50px 12vw;
+    }
+    /*------------------OM CFAA------------------*/
+    .maps{
+        transform: translate(0, -34%);
+    }
+
+    .ekstra {
+        display: block;
+        margin: 50px 0 0;
+    }
+
+    .beige-box, .beige-box-right{
+        width: 100%;
+        padding: 30px 12vw 30px 12vw;
+    }
+
+
+    .virksomheder {
+        display: block;
+    }
+
+    .virksomheder p{
+        width: 100%;
+    }
+
+
+
+    /*------------------PERSONLIG TRÆNING------------------*/
+    
+    .personlig-grid:nth-child(odd) {
+        padding: 20px 12vw;
+        background-color: var(--beige);
+    }
+    
+    .personlig-grid:nth-child(even) {
+        padding: 20px 12vw;
+        background-color: var(--white);
+    }
+
+    .personlig-træning h1, .virksomhed h1 {
+        padding: 0 10vw;
+    }
+
+    /*special cases*/
+    .træning-pris{
+        transform: translateY(0);
+    }
+    .par-pris{
+        transform: translateY(0);
+    }
+    .træning-tekst{
+        transform: translateY(0);
+    }
+
+    
+    /*------------------PRISER------------------*/
+
+    .pris-box {
+        padding: 0 12vw;
+        display: block;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between;*/
+    }
+    
+    .pris-box>article {
+        width: 100%;
+        min-height: 202px;
+    }
+
+    .medlemspris {
+        margin-top: 10px;
+    }
+
+    /*Special cases*/
+    
+    .klip-pris, .klip-btn,.drop-btn, .drop-pris{
+        transform: translate(0);
+    }
+    
+    .medlem-btn{
+        transform: translate(0);
+    }
+    
+    .virksomhed-btn{
+        transform: translate(0);
+    }
+
+    .blue-box div{
+        transform: translate(0);
+    }
+
+    /*----*/
+
+
+    .fordele {
+        height: 360px;
+    }
+
+    .slider-container .card-container{
+        width: 38vw;
+    }
+
+    .fordele-img{
+        width: 20vw;
+    }
+
+    .nav button {
+        width: fit-content;
+        top: 44%;
+    }
+
+    .nav .tilbage {
+        left: -45px;
+    }
+    .nav .frem {
+        right: -45px;
+    }
+
+    .rabat{
+        transform: translateY(0);
+    }
+
+    /*------------------REGLER------------------*/
+    .show-more {
+        margin: 30px 10px;
+    }
+
+    ol {
+        padding-inline-start: 10px;
+    }
+
+
+    /*------------------SHOP------------------*/
+
+    .shop-box {
+        padding: 30px 12vw;
+    
+    }
+    .shop-box>article {
+        width: 48%;
+        min-height: 400px;
+    }
+
+    .shop-box>article img:first-of-type {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+    
+    .shop-box .button a {
+        padding: 13px 18px;
+    }
+
+    .shop-box > article {
+        box-shadow: 0px 1px 4px 0px #b2b2b27a;
+    }
+
+
+
+    /*------------------VIRKSOMHED------------------*/
+    .virksomhed {
+        background-image: url(../images/hero/hero-billede7-kopi.png);
+    }
+
+
+    /*------------------VORES TRÆNING------------------*/
+    .træning {
+        background-image: url(../images/hero/hero-billede7-kopi.png);
+    }
+
+
+
+}

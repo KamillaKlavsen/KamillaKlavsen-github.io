@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1364" height="148" viewBox="0 0 1364 148">
+  <g id="Group_52" data-name="Group 52" transform="translate(1989 5934)">
+    <g id="Ellipse_23" data-name="Ellipse 23" transform="translate(-1989 -5789) rotate(-90)" fill="#fff" stroke="#57c7f2" stroke-width="3">
+      <ellipse cx="72.5" cy="75.5" rx="72.5" ry="75.5" stroke="none"/>
+      <ellipse cx="72.5" cy="75.5" rx="71" ry="74" fill="none"/>
+    </g>
+    <line id="Line_143" data-name="Line 143" x2="251" transform="translate(-1839.5 -5860.5)" fill="none" stroke="#57c7f2" stroke-width="3"/>
+    <text id="_1" data-name="1" transform="translate(-1922 -5840)" fill="#0a2463" font-size="46" font-family="Oswald-Regular, Oswald"><tspan x="0" y="0">1</tspan></text>
+    <line id="Line_144" data-name="Line 144" x2="261" transform="translate(-1437.5 -5860.5)" fill="none" stroke="#57c7f2" stroke-width="3"/>
+    <line id="Line_145" data-name="Line 145" x2="248" transform="translate(-1023.5 -5860.394)" fill="none" stroke="#57c7f2" stroke-width="3"/>
+    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(-1591 -5786) rotate(-90)" fill="#fff" stroke="#57c7f2" stroke-width="3">
+      <ellipse cx="74" cy="77" rx="74" ry="77" stroke="none"/>
+      <ellipse cx="74" cy="77" rx="72.5" ry="75.5" fill="none"/>
+    </g>
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(-1177 -5786) rotate(-90)" fill="#fff" stroke="#57c7f2" stroke-width="3">
+      <ellipse cx="74" cy="77" rx="74" ry="77" stroke="none"/>
+      <ellipse cx="74" cy="77" rx="72.5" ry="75.5" fill="none"/>
+    </g>
+    <g id="Ellipse_26" data-name="Ellipse 26" transform="translate(-776 -5788) rotate(-90)" fill="#fff" stroke="#57c7f2" stroke-width="3">
+      <ellipse cx="72.5" cy="75.5" rx="72.5" ry="75.5" stroke="none"/>
+      <ellipse cx="72.5" cy="75.5" rx="71" ry="74" fill="none"/>
+    </g>
+    <text id="_2" data-name="2" transform="translate(-1528 -5839)" fill="#0a2463" font-size="46" font-family="Oswald-Regular, Oswald"><tspan x="0" y="0">2</tspan></text>
+    <text id="_3" data-name="3" transform="translate(-1111 -5839)" fill="#0a2463" font-size="46" font-family="Oswald-Regular, Oswald"><tspan x="0" y="0">3</tspan></text>
+    <text id="_4" data-name="4" transform="translate(-711 -5839)" fill="#0a2463" font-size="46" font-family="Oswald-Regular, Oswald"><tspan x="0" y="0">4</tspan></text>
+  </g>
+</svg>

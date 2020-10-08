@@ -1,0 +1,1091 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: url(../images/hero/CFAA.png) no-repeat center fixed;
+    background-size: 50%;
+    background-color: var(--light-bg);
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+    padding: 14vh;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+/*------------------farver------------------*/
+
+/* Variabler */
+
+:root {
+    --light-bg: #F7F9FF;
+    --white: #FFFFFF;
+    --blue: #57C7F2;
+    --beige: #D9CFC7;
+    --dark-section: #2E2E2E;
+    --dark-blue: #0A2463;
+}
+
+/* farver på classes */
+
+.black {
+    color: var(--dark-section);
+}
+
+.blue-border {
+    border: 3px;
+    color: var(--blue);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.white {
+    color: var(--white);
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.white-blue {
+    color: var(--light-bg);
+}
+
+.beige {
+    background-color: var(--beige);
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+/*------------------NAVIGATION------------------*/
+
+nav {
+    background-color: var(--dark-section);
+    height: 67px;
+    width: 100%;
+}
+
+.nav-forside {
+    background-color: rgba(46, 46, 46, 0.822);
+    position: absolute;
+    z-index: 10;
+}
+
+nav>a>img {
+    height: 67px;
+    padding-left: 20px;
+}
+
+nav>ul {
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+nav>ul>li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+nav>ul>li>a {
+    color: var(--white);
+    padding: 22.6px 10px;
+}
+
+nav>ul>li>a:hover {
+    background-color: var(--dark-section);
+}
+
+.opret {
+    background-color: var(--blue);
+    padding: 22.6px 0;
+    text-align: center;
+}
+
+nav>ul .opret>a:hover {
+    background-color: var(--blue);
+}
+.opret:hover a {
+    color: var(--dark-section)
+}
+
+nav>ul>li>ul {
+    display: none;
+    margin: 23px 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    background-color: var(--dark-section);
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+nav>ul>li>ul>li {
+    list-style-type: none;
+    display: block;
+    padding: 15px 5px;
+}
+
+nav>ul>li>ul>li>a {
+    color: var(--white);
+    padding: 15px 5px;
+}
+
+nav>ul>li>ul>li:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.burgerbar {
+    display: none;
+}
+
+/*------------------FOOTER------------------*/
+
+.to-top {
+    position: absolute;
+    right: 5%;
+    text-align: center;
+    margin-top: -60px;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+
+.to-top i{
+    font-size: 50px;
+}
+
+
+
+footer {
+    height: 395px;
+    line-height: 2.0vw;
+    max-width: 100%;
+    background-color: var(--dark-section);
+    display: flex;
+    flex-direction: row;
+    padding: 0 12vw;
+    justify-content: space-evenly;
+}
+
+.footer-div:first-child{
+    margin-left: 0;
+}
+
+.footer-div:last-child{
+    margin-right: 0;
+    width: min-content;
+}
+
+.footer-div>h3 {
+    color: var(--white);
+}
+
+.footer-div>p {
+    color: var(--white);
+
+}
+
+.footer-div{
+    margin: 6vw 2vw;
+    width: 25%;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+}
+.logos > img{
+    margin-bottom: 2vw;
+}
+.logo{
+    width: 202px;
+    height: 105px;
+    margin-bottom: 4vw;
+}
+footer a{
+    color: var(--white);
+}
+
+.icon-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.icon {
+    font-size: 4vw;
+    margin: 1vw 0;
+    /* margin-top: 2vw; */
+}
+.face-icon{
+    height: 55px;
+    width: 65px;
+    margin-right: 20px;
+}
+
+.SoMe{
+    height: 65px;
+}
+
+.copyright {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+}
+
+.copyright p {
+    padding-top: 20px;
+    color: white;
+    margin: 0;
+}
+/*link styling*/
+
+a {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.button>a {
+    color: var(--blue);
+    font-weight: 700;
+    padding: 13px 45px;
+    border: 3px solid var(--blue);
+    transition: ease-out .5s;
+}
+.button>a:hover {
+    color: var(--dark-section);
+    box-shadow: inset 20vw 0 0 0 var(--blue);
+}
+
+/* hero billeder */
+
+.hero {
+    height: 50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.doors {
+    display:flex;
+    margin: 20px 12vw 0;
+}
+
+.doors a {
+    color: var(--dark-section);
+}
+
+.doors p {
+    margin: 0 2px;
+}
+
+.door-active {
+    color: var(--dark-blue) !important;
+    font-weight: 700;
+}
+
+/*------------------FORSIDE------------------*/
+
+/*hero video*/
+
+.hero-video {
+    width: 100%;
+}
+
+.fa-arrow-down {
+    font-size: 50px;
+    color: #ffffff52;
+}
+
+.bounce {
+    position: absolute;
+    z-index: 100;
+    top: 92%;
+    left: 50%;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+}
+/*-------sektion livskvalitet-------*/
+
+.img-text {
+    display: flex;
+    margin: 50px 0;
+    height: 83vh;
+}
+
+/* billede til venstre*/
+.img {
+    width: 50vw;
+    z-index: 1;
+    display: block;
+    margin: auto 0;
+}
+
+/*billede til højre*/
+.img-right {
+    transform: translateX(97.8%);
+}
+
+/*tekst til højre*/
+.right-box {
+    height: 83vh;
+    width: 56vw;
+    position: absolute;
+    right: 0;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    display: table;
+}
+
+/* tekst til venstre*/
+
+.left-box {
+    height: 83vh;
+    width: 56vw;
+    position: absolute;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    display: table;
+}
+
+.float {
+    float: left;
+}
+
+.center {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*-------sektion tre bokse-----*/
+
+.three-boxes {
+    height: 400px;
+    width: 100%;
+    background-color: var(--dark-section);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*center center herunder gør, at boksene er centreret fuldstændig*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12vw;
+}
+
+.black-box {
+    background-color: #0B0F18;
+    height: 260px;
+    width: 32%;
+    padding: 100px 30px;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    transition: ease-in .2s;
+}
+
+.two-lines {
+    padding-top: 75px;
+}
+
+.black-box:hover {
+    box-shadow: 0 0 0 3px var(--blue);
+}
+
+/*------------------PRISER------------------*/
+
+.priser {
+    background-image: url(../images/hero/hero-billede3.png);
+}
+
+.pris-box {
+    padding: 60px 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pris-box>article {
+    width: 32%;
+    background-color: var(--beige);
+    text-align: center;
+    padding: 3% 6%;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px 0px #b2b2b2;
+}
+
+.pris-box>article:nth-child(even) {
+    background-color: #E8DFD8;
+}
+
+.medlemspris {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*special cases*/
+.klip-pris, .klip-btn,.drop-btn, .drop-pris{
+    transform: translate(0, 8vh);
+}
+
+.medlem-btn{
+    transform: translate(0, 6vh);
+}
+
+.virksomhed-btn{
+    transform: translate(0, 17vh);
+}
+
+.pris-box div > a {
+    padding: 13px 2vw;
+}
+/*.pris-box>article>a>.button {
+    margin: auto;
+}*/
+
+.top {
+    margin-top: 0;
+}
+
+.bottom {
+    margin-bottom: 0;
+}
+
+.blue-box {
+    background-color: var(--blue) !important;
+}
+
+.blue-box div {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 40px auto;
+    transform: translate(0, 5vh);
+} 
+
+.blue-box .fa-chevron-right {
+    color: var(--blue);
+    font-size: 50px;
+    padding: 10px 0 0 5px;
+}
+
+/*------------------Fordele------------------*/
+/*       Slider        */
+.fordele {
+    background-color: var(--beige);
+    width: 100%;
+    height: 390px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.slider-container {
+  width: 76vw;
+  margin: 0 12vw;
+  padding: 50px 0;
+  min-height: 200px;
+  position: relative;
+}
+
+.slider-container .slider-inner {
+  overflow: hidden;
+}
+.slider-container .track {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+.slider-container .card-container {
+  width: 19vw;
+  flex-shrink: 0;
+  padding-right: 1vw;
+}
+.slider-container .card-container .card {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  cursor: pointer;
+  background-color: var(--beige);
+  border: none;
+}
+
+button:active {
+    border-style: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.nav .tilbage {
+  left: -80px;
+}
+.nav .tilbage.show {
+  display: block;
+}
+.nav .frem {
+  right: -80px;
+}
+.nav .frem.hide {
+  display: none;
+}
+
+.card > * {
+  flex: 1;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 50px;
+}
+/* .fordele-img{
+    width: 6vw;
+    
+} */
+
+.rabat{
+    transform: translateY(4vh);
+}
+
+/*------------------GIRLS BOOTCAMP------------------*/
+
+.girls-boot {
+    background-image: url('../images/hero/hero-billede7.png');
+}
+
+.center ul {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*------------------HANDELSBETINGELSER------------------*/
+
+.handelsbetingelser {
+    background-image: url('../images/hero/hero-billede8.png');
+}
+
+.handel-grid:nth-child(odd) {
+    padding: 5% 5vw 5% 12vw;
+}
+
+.handel-grid:nth-child(even) {
+    padding: 5% 12vw 5% 5vw;
+}
+
+.handel1 {
+    grid-area: handel1;
+}
+
+.handel2 {
+    grid-area: handel2;
+}
+
+.handel3 {
+    grid-area: handel3;
+}
+
+.handel4 {
+    grid-area: handel4;
+}
+
+.grid-handel {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10vh 0;
+    box-shadow: 0px 3px 6px 0px #b2b2b2;
+}
+
+/*------------------HOLDBESKRIVELSER------------------*/
+
+.holdbeskriv {
+    background-image: url(../images/hero/hero-billede3.png);
+}
+
+.hold-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 12vw;
+    justify-content: space-between;
+}
+
+.hold-box {
+    background-color: var(--beige);
+    width: 32%;
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px 0px #b2b2b2;
+}
+
+.hold-box>img {
+    width: 100%;
+}
+
+.hold-box:nth-child(3n+3) {
+    transform: translateY(160px);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+/*MODAL*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index:2;
+  }
+
+.modal-content {
+    background-color: var(--white);
+    margin-top: 100px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 8px 24px; */
+    z-index: 10;
+}
+
+.modal-luk{
+    float: right;
+    font-size: 20px;
+    color: var(--dark-section);
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+}
+
+.modal-body {
+    padding: 5vw;
+    line-height: 3.5vh;
+}
+
+.modal-box {
+    background-color: var(--beige);
+    height: 70px;
+    text-align: center;
+} 
+
+/* The Close Button */
+
+.material_icons {
+    color: var(--dark-section);
+    float: right;
+    font-size: 6vw;
+    font-weight: bold;
+    /* transform: translate(-20px, -20px); */
+}
+
+.material_icons:hover, .material_icons:focus {
+    color: var(--light-bg);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------------HOLDPLAN------------------*/
+
+.holdplan {
+    padding: 50px 12vw;
+}
+
+.holdplan>img {
+    width: 100%;
+}
+
+/*------------------INTROFORLØB------------------*/
+
+.introforløb {
+    background-image: url('../images/hero/hero-billede1.png');
+}
+
+/*------------------KOSTVEJLEDNING------------------*/
+
+.kostvejledning {
+    background-image: url('../images/hero/hero-billede2.png');
+}
+.kost-btn{
+    transform: translateY(17vh);
+}
+.kost-tekst{
+    transform: translateY(10vh);
+}
+
+/*------------------MEDLEMSBETINGELSER------------------*/
+
+.medlemsbetingelser {
+    background-image: url(../images/hero/hero-billede8.png);
+}
+
+.show-more {
+    margin: 50px 12vw;
+}
+
+.udvid {
+    background-color: var(--beige);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.active, .udvid:hover {
+    background-color: #E8DFD8;
+}
+
+.active {
+    margin-bottom: 0;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px 0px #b2b2b2;
+}
+
+/*------------------NYE MEDLEMMER------------------*/
+
+.nye-medlemmer {
+    background-image: url(../images/hero/hero-billede1.png);
+}
+
+/* infografik svg elementer*/
+
+.st0 {
+    fill: #FFFFFF;
+}
+
+.st1 {
+    fill: none;
+    stroke: #57C7F2;
+    stroke-width: 3;
+}
+
+.st2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.st3 {
+    font-size: 19.6938px;
+}
+
+.st4 {
+    fill: #0A2463;
+}
+
+.st5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.st6 {
+    font-size: 41.1779px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-mobil {
+    display: none;
+}
+
+/*------------------OM CFAA------------------*/
+
+.om-os {
+    background-image: url(../images/hero/hero-billede8.png);
+}
+
+.om-os-box {
+    height: 88vh;
+}
+
+.dark-section {
+    width: 100%;
+    background-color: var(--dark-section);
+    padding: 80px 12vw;
+}
+
+.trænere {
+    width: 100%;
+    background-color: var(--dark-section);
+}
+
+.trænere>h2 {
+    color: var(--white);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.trænere .nav button {
+    background-color: var(--dark-section);
+    color: var(--white);
+}
+
+.trænere .card {
+    background-color: var(--beige) !important;
+}
+
+.ekstra {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.beige-box {
+    background-color: var(--beige);
+    width: 48%;
+    padding: 30px 5vw 30px 12vw;
+}
+
+.virksomheder {
+    display: flex;
+    line-height: 1.5;
+}
+
+.virksomheder p{
+    width: 50%;
+}
+
+.beige-box-right {
+    background-color: var(--beige);
+    width: 50%;
+    padding: 30px 12vw 30px 5vw;
+}
+
+.beige-box-right .button {
+    margin-bottom: 40px;
+}
+/*------------------PERSONLIG TRÆNING------------------*/
+
+.personlig-træning {
+    background-image: url('../images/hero/hero-billede2.png');
+}
+
+.personlig-grid:nth-child(odd) {
+    padding: 5% 5vw 5% 12vw;
+}
+
+.personlig-grid:nth-child(even) {
+    padding: 5% 12vw 5% 5vw;
+}
+
+/*special cases*/
+.træning-pris{
+    transform: translateY(11vh);
+}
+.par-pris{
+    transform: translateY(8vh);
+}
+.træning-tekst{
+    transform: translateY(8.5vh);
+}
+/*----*/
+
+.personlig1 {
+    grid-area: personlig1;
+}
+
+.personlig2 {
+    grid-area: personlig2;
+}
+
+.personlig3 {
+    grid-area: personlig3;
+}
+
+.personlig4 {
+    grid-area: personlig4;
+}
+
+.personlig5 {
+    grid-area: personlig5;
+}
+
+.personlig6 {
+    grid-area: personlig6;
+}
+
+.grid-personlig {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'personlig1 personlig2' 'personlig3 personlig4' 'personlig5 personlig6';
+    margin: 10vh 0;
+    box-shadow: 0px 3px 6px 0px #b2b2b2;
+}
+
+/*------------------REGLER------------------*/
+
+.regel-box>.panel>ol>li {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.regel-box>.panel>ol>li>ul>li {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.accordion>h4 {
+    margin: 0;
+}
+
+/*------------------SHOP------------------*/
+
+.shop {
+    background-image: url(../images/hero/hero-billede4.png);
+}
+
+.shop-box {
+    padding: 60px 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-box img {
+    width: 100%;
+}
+
+.shop-box>article {
+    width: 32%;
+    background-color: var(--white);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.shop-box>article:hover {
+    box-shadow: 0px 3px 6px 0px #b2b2b2;
+    transition: ease-out .3s;
+}
+/*------------------VIRKSOMHED------------------*/
+
+.virksomhed {
+    background-image: url('../images/hero/hero-billede7.png');
+}
+
+/*------------------VORES TRÆNING------------------*/
+
+.træning {
+    background-image: url('../images/hero/hero-billede7.png');
+}
+
+
+
+
+
+
