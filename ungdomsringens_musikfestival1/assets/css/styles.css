@@ -1,0 +1,802 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* background img skal sættes ind her, men virker pt ikke for mif*/
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('./img/beton.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+/* Farver */
+.black {
+    background-color: #2A2A2A;
+    color: white;
+}
+
+.grey {
+    background-color: #403b3d;
+    color: white;
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
+
+.lightOrange {
+    background-color: #F2A35E;
+}
+
+.orange {
+    background-color: #F27830;
+}
+.darkOrange {
+    background-color: #F2561D;
+}
+
+
+.wrapper {
+    margin: 4vw 4vw;
+}
+
+/*burger menu*/
+  
+.topnav #sider {
+    display: none; /*Sættes til none*/
+}
+
+.topnav a {
+    color: white;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+
+}
+  
+.topnav a.icon {
+    background: rgba(242, 86, 29, 0.945);
+    display: block;
+    margin-right: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.navigation {
+    height: 70px;
+    width: 100%;
+    background-color: #403b3d;
+    display: flex;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+a.navimg {
+    padding: 0;
+}
+
+.flag {
+    position: absolute;
+    top: 0;
+    right: 105px;
+    height: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+/* Knap */
+.knap-outer {
+    height: 60px;
+    width: 210px;
+}
+
+.knap-inner {
+    border: 5px solid #2A2A2A;
+    height: 65px;
+    width: 215px;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.knap-inner p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 13px 0;
+}
+
+.knap-inner p:hover {
+    text-decoration: underline;
+}
+
+/* Overskrifter */
+
+.heading-outer {
+    height: 80px;
+    width: 300px;
+    margin: 40px auto;
+    background-color: #403B3D;
+}
+
+.heading-inner {
+    border: 5px solid #F27830;
+    height: 80px;
+    width: 300px;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+
+.heading-inner h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 2.5em;
+    margin: 15px 30px 0 15px
+}
+
+
+/* Footer */
+footer {
+    background-color: #2A2A2A;
+    color: white;
+    height: 378px;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 135px;
+    margin-bottom: 0px;
+}
+
+.soMe {
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.soMe article {
+    margin: 3vh;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #E3E3E3;
+}
+
+.fa-facebook{
+    color: #3B5998;
+    font-size: 2em;
+    margin-right: 8px;
+    /* background-color: white; */
+
+}
+
+.fa-instagram{
+    font-size: 2em;
+}
+
+.footerlinks {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin: auto;
+
+}
+.footerlinks ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.footerlinks li {
+    display: inline;
+    padding: 0 2vw;
+}
+
+.sponsor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 62%;
+}
+
+.sponsor img{
+    width: 8vw;
+    margin: 2vh 2vw;
+}
+/*LINK STYLING*/
+
+a:link{
+    color:  #E3E3E3;
+}
+a:visited {
+    color: #E3E3E3;
+  }
+a:active{
+    color: #E3E3E3;
+}
+
+
+/* Landing page*/
+.hero-image {
+    background-image: url("./img/crowd.jpg");
+    width: 100%;
+    height: 82vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    padding: 18vh 10vw;
+}
+
+.whiteText {
+    color: white;
+}
+
+.orangeText {
+    color: #F27830;
+}
+
+.grid-landing {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-areas: 
+        'nye-rammer lokation'
+        'nye-rammer events';
+    grid-template-columns: 48% 48%;
+}
+
+.text {
+    padding: 30px;
+    line-height: 25px;
+}
+
+.lp_nye-rammer {
+    grid-area: nye-rammer;
+}
+
+.lp_lokation {
+    grid-area: lokation;
+}
+
+.lp_lokation a {
+    color: black;
+}
+
+.lp_events {
+    grid-area: events;
+}
+
+.lp_events a {
+    color: white;
+}
+
+.lp_knap {
+    grid-area: lp_knap;
+    margin: 50px auto;
+}
+
+.lp_events .knap-inner {
+    border-color: white;
+}
+
+iframe {
+    width: 100%;
+    height: 292px;
+}
+
+/* -----------------------------------------------------*/
+/*KUNSTNER SIDEN*/
+
+.kunstner-wrapper{
+    margin: 4vw 11vw;
+        /* margin: 4vw 11vw; 
+        width: 78%;
+        margin: auto;*/
+}
+
+.searchbar {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+.forms {
+    margin: auto;
+}
+
+.fa-search{
+    cursor: pointer;
+}
+.fa-filter{
+    cursor: pointer;
+    /* font-size: 2em; */
+}
+
+/*vores default item*/
+.sqr-mainArea_item{
+    height: 220px;
+    width: 270px;
+
+    text-align: center;
+    padding: 0 5px;
+    padding-top: 75px;
+    margin: 10px;
+    /*float: left; *//*ellers kommer det til at ligge under hinanden*/
+    display: inline-block;
+    background-color: #F2561D;
+    cursor: pointer;
+}
+
+/*VARIATIONER i farve*/
+.sqr-mainArea_item-peach{
+    background-color: #F2A35E;
+}
+.sqr-mainArea_item-black{
+    background-color: #403B3D;
+}
+.sqr-mainArea_item-salmon{
+    background-color: #F27830;
+}
+
+/*Variation i font color*/
+.sqr-mainArea_item-textcolor-white{
+    color: white;
+}
+
+
+/*MODAL*/
+.bandModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /*Enable scroll if needed*/
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+}
+  .band-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+   
+}
+.band-desc{
+    padding: 0 2vw;
+
+}
+.band-desc h2{
+    font-size: 2.5vw;
+}
+.band-img{
+    background-image: url('./img/bandfoto.jpg');
+    margin: 20px 20px;
+    margin-top: 40px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+  /* The Close Button */
+.btn_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.btn_close:hover,
+.btn_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Program */
+.days {
+    display: flex;
+    margin: 4vw auto;
+    width: 60%;
+}
+
+.days .knap-outer {
+    margin: auto;
+}
+
+.bigButton-outer {
+    height: 150px;
+    width: 280px;
+}
+
+.bigButton-inner {
+    height: 150px;
+    width: 285px;
+}
+
+.bigButton-inner p {
+    font-size: 35px;
+    margin: 32px 0;
+    color: black;
+}
+
+.fredag {
+    margin: auto auto 6vw auto;
+    padding: 2vw;
+
+}
+
+table {
+    margin-top: 2vw;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    height: 50px;
+}
+
+th {
+    width: 100px;
+}
+
+.lørdag {
+    margin: auto;
+    padding: 2vw;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover p{
+    text-decoration: underline;
+}
+
+#footer-program {
+    margin-top: 48px;
+}
+
+/* Scener */
+.grid-scener {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-areas: 
+    'info info'
+    'royal img'
+    'joule img'
+    'baghuset img'
+    'watt kulkælder'
+    'skraen .'    ;
+    grid-template-columns: 48% 48%;
+}
+
+.sceneinfo {grid-area: info;}
+.royal { grid-area: royal;}
+.joule { grid-area: joule;}
+.baghuset { grid-area: baghuset;}
+.skraen { grid-area: skraen;}
+.watt { grid-area: watt;}
+.kulkælder { grid-area: kulkælder;}
+.img-scener {
+    grid-area: img;
+    height: 100%;
+    width: 80%;
+    margin: 5%;
+}
+
+#footer-scene {
+    margin-top: 268px;
+}
+
+/*Information*/
+.grid-info {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-areas: 
+    'hvornår hvornår'
+    'priser forplejning'
+    'ungeindslag vagter'
+    'parkering overnatning'
+    'alkohol kontakt1'
+    '. kontakt2'
+    'tilmeld tilmeld'    ;
+    grid-template-columns: 48% 48%;
+}
+
+.hvornår {grid-area: hvornår;}
+.priser { grid-area: priser;}
+.forplejning { grid-area: forplejning;}
+.ungeindslag { grid-area: ungeindslag;}
+.vagter { grid-area: vagter;}
+.parkering { grid-area: parkering;}
+.overnatning { grid-area: overnatning;}
+.alkohol { grid-area: alkohol;}
+.kontakt1 { grid-area: kontakt1;}
+.kontakt2 { grid-area: kontakt2;}
+.tilmeld {grid-area: tilmeld;}
+
+.kontakt2 a {
+    color: white;
+}
+
+.kontakt2 a {
+    color: black;
+}
+.img-søren {
+    width: 75%;
+    height: 100%;
+    float: right;
+}
+
+.kontakttekst {
+    width: 50%;
+    float: left;
+}
+
+.kontaktimg {
+    width: 50%;
+    float: right;
+    
+}
+.img-charlotte {
+    width: 75%;
+    height: 100%;
+    float: right;
+}
+.tilmeld {
+   box-shadow: 10px 10px 20px black;
+}
+
+#footer-info {
+    margin-top: 430px;
+}
+/*For Bands*/
+
+
+.grid-bands {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-areas: 
+    'info info'
+    'mødetid ansvarlig'
+    'parkering_bands garderobe'
+    'alkohol kontakt1'
+    '. kontakt2'
+    'tilmeld tilmeld'    ;
+    grid-template-columns: 48% 48%;
+}
+
+.info {grid-area: info;}
+.mødetid { grid-area: mødetid;}
+.ansvarlig { grid-area: ansvarlig;}
+.alkohol { grid-area: alkohol;}
+.garderobe { grid-area: garderobe;}
+.parkering_bands { grid-area: parkering_bands;}
+.kontakt1 { grid-area: kontakt1;}
+.kontakt2 { grid-area: kontakt2;}
+.tilmeld {grid-area: tilmeld;}
+
+
+
+#footer-bands {
+    margin-top: 340px;
+}
+
+
+@media screen and (max-width: 600px){
+    /*SKAL SES MED IPHONE X*/
+    /* fælles for alle sider*/
+    .wrapper {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        line-height: 1.2;
+    }
+
+
+    /* Overskrifter */
+
+    .heading-outer {
+        width: 80vw;
+    }
+
+    /* Navigation*/
+    .topnav a.icon {
+        margin: 0;
+    }
+
+    .flag {
+        right: 85px;
+    }
+
+
+    .days {
+        width: fit-content;
+    }
+    .bigButton-outer {
+        height: 9vh;
+        width: 45vw;
+    }
+    
+    .bigButton-inner {
+        height: 9vh;
+        width: 47vw;
+    }
+    
+    .bigButton-inner p {
+        font-size: 20px;
+        margin: 12px 0;
+        color: black;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    /* Footer*/
+    footer {
+        padding-top: 0; 
+        margin-top: 0;
+        height: fit-content;
+    }
+
+    .sponsor {
+        margin: 0;
+        width: fit-content;
+    }
+
+    .sponsor img {
+        width: 15vw;
+        margin: 4vh 2vw;
+    }
+
+    /* Landing page*/    
+    .hero-image {
+        height: 40vh;
+    }
+
+    .hero-text {
+        padding: 3vh 8vw;
+    }
+
+    .grid-landing {
+        display: block;
+    }
+
+    iframe {
+        width: 100%;
+        height: 40vh;
+    }
+
+
+    .searchbar {
+        width: 100%;
+    }
+    /*Kunstner - Modal*/
+    .band-content {
+        background-color: #fefefe;
+        border: 1px solid #888;
+        width: 75%;
+        height: 80%;
+        transform: translate(0px, 0px);
+    
+    }
+    
+    .band-desc h2{
+        font-size: 20px;
+    }
+    .band-img{
+        background-image: url('./img/bandfoto.jpg');
+        margin: 20px 20px;
+        margin-top: 30px;
+        height: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    /* Scener*/
+    .grid-scener {
+        display: block;
+    }
+
+    .img-scener {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footer-scene {
+        margin-top: 0; 
+    }
+
+    /* Information */
+    .grid-info {
+        display: block;
+    }
+
+    .kontaktimg {
+        display: none;
+        
+    }
+   
+    
+    .kontakttekst {
+        width: 100%;
+        float: left;
+    }
+    
+   
+   
+
+    #footer-info {
+        margin-top: 0;
+    }
+
+    /* For bands */
+    .grid-bands {
+        display: block;
+    }
+
+    .garderobe {
+        background-color: #F27830;
+    }
+
+    .kontakt1 {
+        background-color: #403b3d;
+    }
+
+    .kontakt2 {
+        background-color: #F2A35E;
+        color: #000;
+    }
+
+    #footer-bands {
+        margin-top: 0;
+    }
+}

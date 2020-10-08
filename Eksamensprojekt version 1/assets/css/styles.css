@@ -1,0 +1,885 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1F1F1;
+}
+h1, h2.red {
+    color: #96192b;
+    font-size: 20px;
+}
+p {
+    line-height: 1.5em;
+}
+.icon{
+    font-size: 2em;
+    color: #96192b;
+    cursor: pointer;
+}
+
+/* .icon a:hover{
+    background-color #191C27;
+} */
+
+/*NAV & DROP DOWN*/
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(#96192B, #5E0D18);
+    height: 9vh;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navwrapper {
+    position: relative;
+    width: 100%;
+}
+
+.nav-logo {
+    width: 300px;
+    /* height: 200px; */
+    margin-top: 0;
+    padding-left: 40px;
+    transform: translate(-3px, 0px);
+    cursor: pointer;
+}
+
+/*LINK STYLING*/
+
+a:link, a:visited {
+    color: white;
+}
+
+.navbar li:hover, li:active{
+    background-color: #5e0d18;
+}
+.icon:hover, .icon:active{
+    color: rgba(25, 28, 39, 0.932);
+}
+
+/* footer */
+footer {
+    background-color: #191c27;
+    color: #fff;
+    display: flex;
+    padding-bottom: 20px;
+}
+.social-icon {
+    color: white;
+    font-size: 2.5em;
+    margin: 5px;
+}
+.social-icon > a:hover {
+    background-color: #191c27;
+}
+.social {
+    margin: 25px 40px 0 40px;
+}
+.links > a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+.links > a {
+    background-color: #191c27;
+    text-decoration: underline;
+}
+.links {
+    margin-top: 28px;
+}
+.stars {
+    display: flex;
+    margin: 20px 0 0 170px;
+}
+.starImg {
+    height: 60px;
+}
+footer > .imgs {
+    margin: 20px 0 0 250px;
+}
+.imgs > a:hover {
+    background-color: #191c27;
+}
+.madmedmest {
+    width: 250px;
+    margin-right: 20px;
+}
+.gazelle {
+    width: 150px;
+}
+/*LANDING PAGE*/
+
+/*HERO*/
+
+.hero {
+    width: 100%;
+    height: 624px;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.gradient-box {
+    position: relative;
+    width: 50%;
+    height: 625px;
+    transform: translateY(-630px);
+    background-image: linear-gradient(90deg, #191C27, rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    width: 550px;
+    height: 80px;
+    padding-left: 50px;
+    margin-top: 50px;
+    /* z-index: 2; */
+}
+
+.intro-text {
+    color: white;
+    padding-left: 50px;
+    font-size: 1.5vw;
+    /* z-index: 2; */
+}
+
+.intro-text>p {
+    font-size: 1vw;
+    margin-top: 30px;
+    padding: 0 0px;
+}
+
+/*MAIN*/
+
+.cobox-index, .catering-box-index {
+    display: flex;
+    height: 200px;
+    margin: 40px 30px 10px 30px;
+}
+
+.co-text-index, .ca-text-index {
+    display: inline-block;
+    background-color: white;
+    /* width: 50%; */
+    padding: 0 10px;
+    margin: 0;
+    line-height: 27px;
+    text-align: center;
+}
+
+.btn-box {
+    background-color: #5e0d18;
+    height: 200px;
+    width: 75px;
+}
+
+.fa-chevron-circle-right {
+    font-size: 2em;
+    color: #96192b;
+    /* text-align: center; */
+    transform: translate(1px, 80px);
+}
+
+.img-selskaber {
+    height: 200px;
+    width: 418px;
+    background-image: url('../images/Landing_1.jpg');
+}
+.img-catering {
+    height: 200px;
+    width: 758px;
+    background-image: url('../images/Landing_2.jpg');
+
+}
+
+
+
+/*MENU & VORES HISTORIE*/
+
+.experience-menu {
+    display: flex;
+    width: 630px;
+    flex-direction: row;
+    margin: 4vh 2vw;
+}
+
+
+.menu-text {
+    background-color: white;
+    /* width: 300px; */
+    height: 300px;
+    padding: 0 15px;
+    text-align: center;
+    
+}
+
+.img-container {
+    width: 359px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.img1 {
+    background-image: url('../images/Landing_3.jpg');
+}
+
+.img2 {
+    background-image: url('../images/Landing_4.jpg');
+}
+
+.img3 {
+    background-image: url('../images/Landing_5.jpg');
+}
+
+.icon-on-img {
+    transform: translate(98px, 10px);
+}
+.icon-history{
+    transform: translate(-3px, -20px);
+}
+
+.img-history {
+    background-image: url('../images/Landing_kokke.jpg');
+    width: 300px;
+    height: 230px;
+}
+
+.gradient-box2 {
+    height: 70px;
+    width: 300px;
+    transform: translate(0px, -20px);
+    background-color: #5e0d18;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.our-history {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    margin: 4vh 12vw
+}
+
+/*CSS GRID NAMING*/
+
+.name-hero {grid-area: hero;}
+.name-cobox {grid-area: cobox;}
+.name-cateringbox {grid-area: cateringbox;}
+.name-menu {grid-area: experienceMenu;}
+.name-history {grid-area: our-history;}
+
+/*PLACEMENT IN GRID - DESKTOP*/
+
+.main-container {
+    width: 1024px;
+    margin: 0px auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    'hero hero hero hero'
+    'cobox cobox cateringbox cateringbox'
+    'experienceMenu experienceMenu our-history our-history'
+    ;
+}
+
+/*SELSKABER PAGE*/
+
+.name-text-selskaber {grid-area: tekst;}
+.name-menu-selskaber {grid-area: menubox;}
+.name-img-selskaber {grid-area: billede;}
+.name-selskab-hero {grid-area: hero;}
+.lokale-banner { grid-area: banner; }
+.lokale-info { grid-area: info; }
+.lokale-img { grid-area: img; }
+
+.grid-container-selskaber {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2vh;
+    grid-template-areas:
+    'hero hero hero hero hero hero'
+    'tekst tekst tekst tekst tekst tekst'
+    'menubox menubox menubox billede billede billede'
+    'banner banner banner banner banner banner'
+    'info info info info img img';
+}
+
+.name-selskab-hero {
+    width: 100%;
+}
+
+.name-text-selskaber {
+    background-color: white;
+    height: 100%;
+    padding: 1vh 2vw;
+    line-height: 1.8;
+}
+
+.name-text-selskaber h1 {
+    color: #96192B;
+}
+
+.name-menu-selskaber {
+    background-color: #96192B;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px #888888;
+}
+
+.name-menu-selskaber h3 {
+    color: white;
+}
+
+.name-img-selskaber img {
+    width: 100%;
+}
+
+.flexbox-selskab {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selskab-menu {
+    width: 50%;
+    height: 15vh; 
+}
+
+.selskab-menu a {
+    color: #000000;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.grey {
+    background-color: #F1F1F1;
+}
+
+.lokale-banner {
+    background-image: url(../images/selskab_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 280px;
+    display: flex;
+}
+.banner-tekst {
+    background-color: rgba(10, 10, 10, 0.7);
+    color: #fff;
+    text-align: center;
+    margin: 60px 420px;
+    padding: 25px 30px;
+    font-size: 25px;
+    align-self: center;
+    height: 30vh;
+}
+.lokale-img {
+    width: 100%;
+}
+.lokale-info {
+    background-color: #fff;
+    padding: 10px 55px;
+}
+
+.lokale-tekst {
+    padding-top: 10px;
+}
+
+
+
+/*SELSKABER UNDERSIDER*/
+.bryllup-menu {
+    padding: 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.name-menu-bryllup {grid-area: menuBryllup;}
+.name-pris1-bryllup {grid-area: pris1;}
+.name-pris2-bryllup {grid-area: pris2;}
+.name-others {grid-area: others;}
+
+.grid-container-bryllup {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    'menuBryllup menuBryllup'
+    'pris1 pris2'
+    'others others';
+    width: 40vw;
+    margin: auto;
+}
+
+.name-pris1-bryllup {
+    background-color: #96192b;
+}
+
+.name-pris2-bryllup {
+    background-color: #5e0d18;
+    font-weight: bold;
+}
+
+
+.name-others {
+    padding: 0vh 2vw;
+    background-color: #ffffff;
+    margin-top: 2vh;
+}
+
+.name-others a{
+    color: #191c27;
+}
+
+.pris-bryllup {
+    text-align: center;
+    color: #ffffff;
+}
+
+.selskaber-hero {
+    width: 100%;
+}
+
+/* OM OS PAGE */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    'first-a first-a first-a first-i first-i'
+    'second-i second-i second-a second-a second-a'
+    'third-a third-a third-a third-i third-i';
+}
+.first-article { grid-area: first-a; }
+.first-image { grid-area: first-i; }
+.second-image { grid-area: second-i; }
+.second-article { grid-area: second-a; }
+.third-article { grid-area: third-a; }
+.third-image { grid-area: third-i; }
+
+.first-image {
+    grid-area: first-i;
+}
+
+.second-image {
+    grid-area: second-i;
+}
+
+.second-article {
+    grid-area: second-a;
+}
+
+.third-article {
+    grid-area: third-a;
+}
+
+.third-image {
+    grid-area: third-i;
+}
+
+.first-article {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+.first-image {
+    background-image: url(../images/bygning.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+}
+
+.second-image {
+    background-image: url(../images/mette_stefan.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.second-article {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+.third-article {
+    background-color: #fff;
+    padding: 10px 15px 80px 15px;
+}
+
+.third-image {
+    background-image: url(../images/kokke.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+/*MENU SIDE*/
+
+/*Grid naming*/
+
+.name-banner-menu {grid-area: bannerMenu;}
+.name-forår-menu {grid-area: forårMenu;}
+.name-sommer-menu {grid-area: sommerMenu;}
+.name-efterår-menu {grid-area: efterårMenu;}
+.name-vinter-menu {grid-area: vinterMenu;}
+.menubox        {grid-area: menubox;}
+.name-article-menu {grid-area: articleMenu;}
+.name-img-menu {grid-area: imgMenu;}
+.name-price-menu {grid-area: priceMenu;}
+  
+.grid-container-menu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    'bannerMenu bannerMenu bannerMenu bannerMenu' 
+    'forårMenu sommerMenu efterårMenu vinterMenu' 
+    'menubox menubox imgMenu imgMenu' 
+    'articleMenu articleMenu imgMenu imgMenu' 
+    'articleMenu articleMenu priceMenu priceMenu';
+}
+
+.name-banner-menu > h1{
+    font-size: 3vw;
+}
+.wrapper {
+    margin: 5vh 10vw;
+}
+.image-link {
+    text-decoration: none;
+}
+.menubox {
+    background-color: #5e0d18;
+    color: white;
+    height: 8vh;
+    margin-right: 2.5vw;
+    padding: 2vh 2vw;
+}
+.season-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-icon{
+    align-self: center;
+    justify-self: center;
+    transform: none;
+}
+.menu-icon1{
+    transform: translate(310px, -20px);
+}
+
+.season-menu > h3{
+    color: white;
+    font-size: 2vw;
+    align-self: center;
+}
+.img-container-menu{
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-img1{
+    background-image: url('../images/Foraar.jpg');
+}
+.menu-img2{
+    background-image: url('../images/Sommer.jpg');
+}
+.menu-img3{
+    background-image: url('../images/Efteraar.jpg');
+}
+.menu-img4{
+    background-image: url('../images/Vinter.jpg');
+}
+.menu-img5{
+    background-image: url('../images/Menu_1.jpg');
+    width: 25vw;
+    height: 20vw;
+    margin-top: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name-article-menu {
+    margin-right: 2.5vw;
+    background-color: #ffffff;
+    padding: 2vh 2vw;
+    height: 45vh;
+}
+
+.pris {
+    background-color: #ffffff;
+    height: 22vh;
+    width: 25vw;
+    transform: translateY(-5px);
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.pris > h2{
+    color: #96192B;
+    margin: 10px;
+}
+.pris > p{
+    padding-left: 20px;
+}
+/*
+.pris2{
+    width: 25vw;
+    height: 3vh;
+    transform: translate(-9px, -42px);
+}*/
+.under-pris{
+    transform: translate(-10px, -45px);
+}
+.under-pris > p{
+    width: 25vw;
+    height: 6vh;
+    color: white;
+    transform: translate(-1px, 35px);
+    background-color: #666666;
+    padding: 5px 15px;
+    font-weight: bold;
+
+}
+
+/*ÅRSTIDS MENUER*/
+
+/*Grid naming*/
+.name-tilbage {
+    background-color: #96192b;
+    color: #ffffff;
+    height: 6vh;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.name-tilbage h3 {
+    margin: 0;
+    padding: 1vh;
+}
+.season-name {
+    text-align: center;
+}
+.months{
+    transform: translateY(-16px);
+}
+/*Grid naming*/
+
+.name-tilbage {grid-area: tilbage;}
+.name-forret {grid-area: forret;}
+.name-forret-img {grid-area: forretImg;}
+.name-hovedret {grid-area: hovedret;}
+.name-hovedret-img {grid-area: hovedretImg;}
+.name-dessert {grid-area: dessert;}
+.name-dessert-img {grid-area: dessertImg;}
+
+.grid-container-season {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    'forret forret forret forretImg forretImg'
+    'hovedretImg hovedretImg hovedret hovedret hovedret'
+    'dessert dessert dessert dessertImg dessertImg'
+    'tilbage . . . .';
+}
+
+.menu-tekst {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.seasonImg {
+    width: 100%;
+    /* height: 100%; */
+}
+
+/*SPIS HOS MEST SIDE*/
+
+/*Grid naming*/
+
+.name-hosMest {grid-area: hosMest;}
+.name-name-fredag1 {grid-area: fredag1;}
+.name-name-fredag2 {grid-area: fredag2;}
+.name-name-fredag3 {grid-area: fredag3;}
+.name-name-fredag4 {grid-area: fredag4;}
+
+.grid-container-hosMest {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-areas: 
+        'hosMest hosMest' 
+        'fredag1 fredag2' 
+        'fredag3 fredag4';
+}
+
+.name-hosMest {
+    height: 40vh;
+    background-image: url('../images/spis_hos_mest_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tekst-hosMest {
+    margin: 4vh auto;
+    width: 35vw;
+    height: 30vh;
+    background-color: rgba(25, 28, 39, 0.788);
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.tekst-hosMest p {
+    padding-top: 2vh;
+    padding-bottom: 0vh;
+    padding-right: 4vw;
+    text-align: center;
+    line-height: 31px;
+    padding-left: 4vw;
+}
+
+.redbox {
+    background-color: #5E0D18;
+    width: 35vw;
+    height: 6vh;
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+.redbox p {
+    padding: 9px;
+}
+.Mest-icon{
+    z-index: 999;
+}
+
+.fredag {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 2vh 2vw;
+}
+
+.fredag h2 {
+    color: #5E0D18;
+    margin-bottom: 0;
+}
+
+.fredag h3 {
+    color: #96192B;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.fredag p {
+    line-height: 2;
+    text-align: center;
+}
+
+#footer-spis {
+    margin-top: 15vh;    
+} 
+/* INFORMATIONSSIDE */
+
+.grid-container-kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'adresse adresse kontakt kontakt tider tider'
+    'intro intro kort kort kort kort';
+}
+.adresse { grid-area: adresse; }
+.kontakt { grid-area: kontakt; }
+.åbningstider { grid-area: tider; }
+.intro { grid-area: intro; }
+.kort { grid-area: kort; }
+
+.div-links, a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+.div-links, a:hover{
+    color: #888888;
+}
+
+.grid-container-kort {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'park kort2 overnatning kort3';
+    background-color: #96192b;
+    padding: 5vh 2vw;
+
+}
+.parkering { grid-area: park; }
+.kort2 { grid-area: kort2; }
+.overnatning { grid-area: overnatning; }
+.kort3 { grid-area: kort3; }
+
+.adresse, .kontakt, .åbningstider {
+    background-color: #fff;
+    padding: 10px 60px;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 120px 60px 0px 60px;
+    margin: 20px 20px 20px 0;
+}
+.intro > p {
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: center;
+}
+h2.center {
+    text-align: center;
+}
+h2.padding {
+    padding-left: 15px;
+}
+.kort {
+    background-color: #fff;
+    margin: 20px 0 20px 20px;
+}
+.kort > img {
+    width: 100%;
+}
+
+.parkering, .overnatning {
+    background-color: #fff;
+}
+.parkering > p, .overnatning > p {
+    padding: 0 10px 0 10px;
+}
+.kort2 {
+    margin-right: 20px;
+}
+

@@ -1,0 +1,390 @@
+@media screen and (max-width: 426px) { 
+    /*HEADER*/
+
+
+    /*FOOTER*/
+    footer {
+        display: block;
+    }
+    .social > a {
+        font-size: 12vw;
+        margin: 5px;
+    }
+    .social {
+        display: inline-block;
+        margin: 0;
+        padding: 1vh 8vw;
+    }
+
+    .links {
+        float: right;
+        margin: 2vh 12vw;
+    }
+
+    .links > a {
+        margin-right: 10px;
+    }
+    .stars {
+        display: block;
+        margin: 0 30vw;
+    }
+    .starImg {
+        height: 50px;
+    }
+    footer > .imgs {
+        margin: 0;
+    }
+
+    .madmedmest {
+        width: 90vw;
+        margin:0 5vw;
+    }
+    .gazelle {
+        display: none;
+    }
+
+    .wrapper {
+        margin: 0;
+    }   
+    
+    /* MENU SIDE */
+
+    .name-banner-menu > h1{
+        font-size: 6vw;
+        padding: 0 2vw;    
+    }
+
+    .grid-container-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'bannerMenu bannerMenu' 
+            'forår sommer'
+            'efterår vinter' 
+            'menubox menubox'
+            'imgMenu imgMenu' 
+            'articleMenu articleMenu'
+            'priceMenu priceMenu';
+    }
+    
+    .menubox {
+        padding: 2vh 2vw;
+        margin-right: 0;
+    }
+
+    .season-menu {
+        height: 50vw;
+    }
+
+    .season-menu > h3{
+        font-size: 6vw;
+    }
+    
+    .img-container-menu{
+        width: 49vw;
+        height: 49vw;
+    }
+
+    .menu-img5{
+        width: 100vw;
+        height: 80vw;
+    }
+    .name-article-menu {
+        margin:0;
+        padding: 2vh 2vw;
+        height: 100%;
+    }
+
+    .pris {
+        width: 100vw;
+        transform: translateY(-5px);
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .pris > p{
+        padding: 2vh 2vw;
+    }
+    /*ÅRSTIDS MENUER*/
+    
+    .grid-container-season{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'forret'
+        'forretImg'
+        'hovedret'
+        'hovedretImg'
+        'dessert'
+        'dessertImg'
+        'tilbage';
+    }
+    .name-banner-menu-seasons > h1{
+        font-size: 7vw;
+    }
+    .months{
+        transform: translateY(-14px);
+    }  
+    
+    /*SELSKABS SIDE*/
+    .grid-container-selskaber {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'hero'
+        'tekst'
+        'billede'
+        'menubox'
+        'banner'
+        'info'
+        'img';
+    }
+
+    .name-selskab-hero {
+        width: 100vw;
+    }
+    .name-text-selskaber {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .name-img-selskaber img {
+        width: 100vw;
+    }
+    .name-menu-selskaber {
+        width: 100vw;
+    }
+
+    .flexbox-selskab {
+        width: 100vw;
+    }
+    .selskab-menu {
+        width: 50%;
+        height: 10vh; 
+    }
+
+    .lokale-info {
+        width: 100vw;
+    }
+    
+    .lokale-img {
+        width: 100vw;
+    }
+    .banner-tekst {
+        margin: 0;
+    }
+
+    /*SELSKABS UNDERSIDER*/
+    .grid-container-bryllup{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'menuBryllup menuBryllup'
+        'pris1 pris2'
+        'others others';
+        width: 100%;
+    }
+    
+    .pris-bryllup > p {
+        margin: 0;
+    }
+         
+    /*SPIS HOS MEST*/
+    .grid-container-hosMest{
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'hosMest'
+        'fredag1'
+        'fredag2'
+        'fredag3'
+        'fredag4';
+    }
+    .name-banner-menu > h1{
+        font-size: 7vw;
+        padding-left: 12px;
+    }
+
+    .tekst-hosMest{
+    width: 70vw;
+    height: 31vh;
+    margin: 1vh auto;
+    font-size: 0.8em;
+    }
+
+    .redbox{
+        width: 70vw;
+    }
+
+    .fredag {
+        background-color: #ffffff;
+        height: 100%;
+        padding: 2vh 2vw;
+    }
+
+    #footer-spis {
+        margin-top: 10vh;
+    }
+    /*OM OS SIDEN*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+        grid-template-areas:
+        'first-a'
+        'first-i'
+        'second-a'
+        'second-i'
+        'third-a'
+        'third-i';
+    }
+
+    .first-image {
+        height: 50vh;
+    }
+    .second-image {
+        height: 50vh;
+    }
+    .third-image {
+        height: 50vh;
+    }
+    .third-article {
+        padding: 10px 15px;
+    }
+
+    /*LANDING PAGE*/
+    /*css naming*/
+    .name-btnbox{grid-area: btnbox;}
+    .name-imgSelskab{grid-area: imgSelskab;}
+    .name-cotext{grid-area: cotext;}
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'hero'
+        'cobox'
+        'cateringbox'
+        'experienceMenu' 
+        'our-history';
+    }
+    .main-container{
+        width: 426px;
+        margin: 0;
+    }
+    .grid-item{
+        width: 70%;
+    }
+
+    .name-imgSelskab {
+        display: none;
+    }
+
+    .img-catering {
+        display: none;
+    }
+    /*Hero - landing*/
+    .hero {
+        height: 33vh;
+    }
+    
+    /*Main landing*/
+    .cobox-index, .catering-box-index {
+        margin: 6px 0px 15px;
+    }
+    .co-text-index, .ca-text-index {
+    }
+
+    .experience-menu {
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .menu-text {
+        height: 46vh;
+    }
+
+    .img-container {
+        height: 15vh;
+        width: 60vw;
+    }
+    .our-history{
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        margin: 0;
+    }
+    .img-history{
+        margin: 0;
+        height: 30vh;
+        width: 100vw;
+    }
+
+    
+    .gradient-box2{
+        margin: 0;
+        width: 100vw;
+    }
+    .landing-footer{
+        transform: translate(0px, 114px);
+        height: 36vh;
+    }
+
+
+        
+
+    /*INFORMATIONS PAGE*/
+    .grid-container-kontakt{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'adresse'
+        'kontakt'
+        'tider'
+        'intro'
+        'kort';
+        grid-gap: 2px;
+    }
+
+    .adresse, .kontakt, .åbningstider{
+        padding: 0 5px;
+        font-size: 3vw;
+    }
+
+    .intro{
+        margin: 20px 0;
+        text-align: center;
+        padding: 0;
+    }
+    .kort{
+        margin: 0;
+    }
+
+    .grid-container-kort{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'park'
+        'kort2'
+        'overnatning'
+        'kort3';
+        padding: 0;
+    }
+    .parkering, .overnatning {
+        width: 100vw;
+    }
+    .kort2, .kort3 {
+        width: 100%;
+    }
+    .parkering > p, .overnatning > p {
+        padding: 0 10px 0 10px;
+    }
+    .kort2 {
+        margin-right: 20px;
+    }
+
+
+
+
+}   
